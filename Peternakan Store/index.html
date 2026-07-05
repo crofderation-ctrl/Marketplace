@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FarmStore - Penjualan Produk Peternakan</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<nav>
+
+<h2>🐄 FarmStore</h2>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#produk">Produk</a></li>
+
+<li><a href="#tentang">Tentang</a></li>
+
+<li><a href="#kontak">Kontak</a></li>
+
+<li>
+
+<button id="cartBtn">
+
+🛒 <span id="jumlahCart">0</span>
+
+</button>
+
+</li>
+
+</ul>
+
+</nav>
+
+<header>
+
+<h1>Produk Peternakan Berkualitas</h1>
+
+<p>
+
+Menjual sapi, kambing, ayam, telur, susu segar,
+
+dan berbagai kebutuhan peternakan.
+
+</p>
+
+<a href="#produk" class="btn">Belanja Sekarang</a>
+
+</header>
+
+<section class="search">
+
+<input
+
+type="text"
+
+id="search"
+
+placeholder="Cari produk...">
+
+</section>
+
+<section id="produk">
+
+<h2>Produk Kami</h2>
+
+<div class="produk-container" id="produkContainer">
+
+<div class="card">
+
+<img src="img/Sapi  Bali.jpg">
+
+<h3>Sapi Bali</h3>
+
+<p>Rp18.000.000</p>
+
+<button onclick="tambahCart('Sapi Bali')">
+
+Tambah
+
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="img/ayam kampung.jpeg">
+
+<h3>Ayam Kampung</h3>
+
+<p>Rp95.000</p>
+
+<button onclick="tambahCart('Ayam Kampung')">
+
+Tambah
+
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="img/Telur ayam.jpg">
+
+<h3>Telur Organik</h3>
+
+<p>Rp60.000</p>
+
+<button onclick="tambahCart('Telur Organik')">
+
+Tambah
+
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="img/Susu.jpg">
+
+<h3>Susu Segar</h3>
+
+<p>Rp25.000</p>
+
+<button onclick="tambahCart('Susu Segar')">
+
+Tambah
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="tentang">
+
+<h2>Tentang Kami</h2>
+
+<p>
+
+FarmStore merupakan toko peternakan online
+
+yang menyediakan berbagai produk peternakan
+
+berkualitas dengan harga terbaik.
+
+</p>
+
+</section>
+
+<section id="kontak">
+
+<h2>Kontak</h2>
+
+<p>Email : farmstore@gmail.com</p>
+
+<p>WhatsApp : 0812-3456-7890</p>
+
+</section>
+
+<footer>
+
+<p>
+
+Copyright © 2026 FarmStore
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
